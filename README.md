@@ -1,5 +1,5 @@
 # Demo
-Minimium viable Demoable Projects
+Minimium viable Demoable Projects and study materials
 
 Materials got from sapient
 
