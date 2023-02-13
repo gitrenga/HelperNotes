@@ -8,9 +8,9 @@
     - Topic
     - consumer groupid
     - offset
-     - earlier
-     - latest
-     - random
+      - earlier
+      - latest
+      - random
      - key de-serializer
      - value de-serializer
   -  Broker
