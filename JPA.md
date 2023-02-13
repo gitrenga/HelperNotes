@@ -24,7 +24,8 @@ fetchtype = eager,lazy
 
 owning side - @joincolumn will be present, best practice to put on the foriegn key side
 
-referencing side - mappedby = <owning side variable name>
+referencing side - mappedby = owning side variable name
+
   
   ![image](https://user-images.githubusercontent.com/55741060/218555942-cc16d367-73e9-4ba8-affc-eb3a4052f98a.png)
 
