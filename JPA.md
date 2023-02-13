@@ -2,19 +2,19 @@ one to one
 
 one to many
 
-  fetch is lazy by default
+  - fetch is lazy by default
   
 many to one
 
-  option = true by default
+ -  option = true by default
   
 many to many
 
-  join table
+  - join table
   
-    joincolumn
+      - joincolumn
     
-    inversejoincolumn
+      - inversejoincolumn
 
 optional = true, false
 
