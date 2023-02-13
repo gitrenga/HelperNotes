@@ -6,13 +6,17 @@ Materials got from sapient
 Coding :
 -           
 https://coderpad.io/getting-started-candidates/
+
 https://www.quora.com/Is-it-good-to-practice-writing-code-without-an-IDE
+
 https://www.quora.com/What-are-the-disadvantages-of-using-an-IDE-as-a-beginner
 
 Theory vs Hands on coverage:
 -     
 https://www.journaldev.com/2389/java-8-features-with-examples
+
 https://www.baeldung.com/solid-principles
+
 https://www.infoq.com/articles/java-profiling-with-open-source/
 https://medium.com/platform-engineer/guide-to-java-profilers-e344ce0339e0
 https://www.javacodegeeks.com/2016/05/understanding-transactional-annotation-spring.html
