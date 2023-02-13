@@ -5,12 +5,12 @@
     -  key serializer
     -  value serializer
   -  Consumer
-    - Topic
-    - consumer groupid
-    - offset
-      - earlier
-      - latest
-      - random
+     - Topic
+     - consumer groupid
+     - offset
+       - earlier
+       - latest
+       - random
      - key de-serializer
      - value de-serializer
   -  Broker
