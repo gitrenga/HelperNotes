@@ -1,3 +1,5 @@
+https://stackabuse.com/a-guide-to-jpa-with-hibernate-relationship-mapping/
+
 one to one
 
 one to many
