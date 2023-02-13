@@ -1,9 +1,9 @@
   - Producer
-   -   Topic
-   -   number of Partition
-   -   replication factor
-   -   key serializer
-   -   value serializer
+    - Topic
+    - number of Partition
+    -  replication factor
+    -  key serializer
+    -  value serializer
   -  Consumer
     - Topic
     - consumer groupid
