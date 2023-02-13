@@ -14,6 +14,6 @@
      - key de-serializer
      - value de-serializer
   -  Broker
-    - Partition
-    - Leader
-    - Insync node
+     - Partition
+     - Leader
+     - Insync node
