@@ -115,7 +115,7 @@ Auto-Configuration Conditions
 
 @Transient
 
-@CreatedBy, @LastModifiedBy, @CreatedDate, @LastModifiedDate
+@CreatedBy, @LastModifiedBy, @CreatedDate, @LastModifiedDate @EntityListeners(AuditingEntityListener.class)
 
 Spring Data JPA Annotations
 
