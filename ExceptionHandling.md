@@ -9,3 +9,5 @@ try with resource
 NoClassDefFoundError vs ClassNotFoundException
 
 Exceptions are costly, so throw it only when it makes sense. Else you can catch them and provide a null or empty/appropriate response
+
+@SneakyThrows - wrap the exception and throw it as runtime exception so that the method signature dont require to declare the exceptions its throwing
