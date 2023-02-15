@@ -45,3 +45,7 @@ rest
     - bean needs to be configured with group,URL endpoints
     - open api dependency generates the json schema openAPI.json automatically from it
     - this configuration of building the openapi bean is placed in reuseable framework libraries and re-used in all microservices
+
+
+  - DRY not possible in json but can be acheived in yaml
+  - custom serialization and de-serialization using @jsonSerializer and @deserializer can be provided
