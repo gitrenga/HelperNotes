@@ -1,3 +1,4 @@
+```
 public class GenericsExample<T> {
     //Method using generics and type inference
     public void print(List<T> lst){
@@ -566,3 +567,5 @@ public class Driver {
     }
 
     }
+    
+    ```
