@@ -5,3 +5,7 @@ Exception - exception,printstacktrace,getMessage
 ARM
 
 try with resource
+
+NoClassDefFoundError vs ClassNotFoundException
+
+Exceptions are costly, so throw it only when it makes sense. Else you can catch them and provide a null or empty/appropriate response
