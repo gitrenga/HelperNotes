@@ -1,3 +1,5 @@
+
+
 ```
 public class GenericsExample<T> {
     //Method using generics and type inference
