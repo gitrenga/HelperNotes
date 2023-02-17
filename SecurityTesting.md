@@ -1,10 +1,6 @@
 # Security Testing Tools
 
-Tools	Type	Responsibility
-App-scan	DAST	Cross-Site Scripting (XSS), SQL injection
-ZAP	DAST	Cross-Site Scripting (XSS), SQL injection
-dependency checker	SAST	dependency scan and its vulnerability check against global vulnerability DB
-nessus scan	DAST	misconfigured settings, outdated software, and unpatched systems
+
 ![image](https://user-images.githubusercontent.com/55741060/219594277-1ea2a882-ac69-44b1-a3a2-9273144afd0d.png)
 
 
