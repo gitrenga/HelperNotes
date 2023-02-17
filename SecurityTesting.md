@@ -1,7 +1,12 @@
 # Security Testing Tools
 
 
-![image](https://user-images.githubusercontent.com/55741060/219594277-1ea2a882-ac69-44b1-a3a2-9273144afd0d.png)
+| Tools              | Type | Responsibility                                                              |
+| ------------------ | ---- | --------------------------------------------------------------------------- |
+| App-scan           | DAST | Cross-Site Scripting (XSS), SQL injection                                   |
+| ZAP                | DAST | Cross-Site Scripting (XSS), SQL injection                                   |
+| dependency checker | SAST | dependency scan and its vulnerability check against global vulnerability DB |
+| nessus scan        | DAST | misconfigured settings, outdated software, and unpatched systems            |
 
 
 # TLS
@@ -14,7 +19,20 @@
 
 # SSL	vs TLS
 
-![image](https://user-images.githubusercontent.com/55741060/219594558-a23a6abc-45d1-4f65-9712-6a2e999fda00.png)
+| SSL                                              | TLS                                |
+| ------------------------------------------------ | ---------------------------------- |
+| deprecated                                       | latest                             |
+| RC4 encrption                                    | SHA-256 and other latest encrytion |
+| handshake and communication pattern is different |
+
+# Security Issues
+
+| Issue             | Description                | mitigation         |
+| ----------------- | -------------------------- | ------------------ |
+| CSRF              | cross site request forgery | csrfgaurd.jar,CORS |
+| XSS               | cross site scripting       | antisamy.jar,CORS  |
+| SQL Injection     |                            |                    |
+| middle man attack |                            | TLS,HTTPS          |
 
 
 
