@@ -40,7 +40,10 @@
  - Parallelism
  - Less garbage collection due to reduced number of object created in FP
  - Compiler can optimize it better for memory and performance
- 
+ - Pure Function - returns same value for same input if its called any number of times
+ - lamda in java have to use variables which are final or effectively final (not final but not modified in code)
+
+
 # Code examples to understand FP
 
 ```
