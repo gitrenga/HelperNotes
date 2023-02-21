@@ -1,5 +1,46 @@
 
+# Patterns
+ - **Internal iterator** i.e. stream forEach - focus on what to do than how to do in conventional for loop
+ - **Stratergy Pattern** - pass function as input (stratergy - predicate) and execute operation based on stratergy
+ - **Decorator** - instead of passing object to another object, do function chaining using andThen
+ - **Fluent Interface** - builder pattern
+ - **Execute Around Method** - 
+```
+    public class Resource(){
+        private Resource(){}
+        
+        public Resource op1(){System.out.println("op1") return this;}
+        public Resource op2(){System.out.println("op2") return this;}
+        
+        public static void use(Consumer<Resource> block){
+            Resource r = new Resource();
+            
+            block.accept(r);
+            
+            r.close();
+        }
+        
+        public Resource close(){}
+        
+    }
+    
+    psvm(){
+        Consumer<Resource> blc = (resource) -> { 
+            resource.op1().op2();
+        }
+        
+        Resource.use(blc);
+    }
+```
 
+# Characteristics of FP
+
+ - Lazy Evaluation
+ - Immutable
+ - Parallelism
+ - Less garbage collection due to reduced number of object created in FP
+ - Compiler can optimize it better for memory and performance
+ 
 ```
 public class GenericsExample<T> {
     //Method using generics and type inference
