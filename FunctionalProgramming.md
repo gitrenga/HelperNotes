@@ -41,6 +41,8 @@
  - Less garbage collection due to reduced number of object created in FP
  - Compiler can optimize it better for memory and performance
  
+# Code examples to understand FP
+
 ```
 public class GenericsExample<T> {
     //Method using generics and type inference
