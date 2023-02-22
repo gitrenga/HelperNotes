@@ -43,7 +43,13 @@
  - Pure Function - returns same value for same input if its called any number of times
  - lamda in java have to use variables which are final or effectively final (not final but not modified in code)
 
-
+# Collectors & Stream
+ 
+ - Lazy Evaluation - functional pipeline is executed only when reduce/terminal operation is started
+ - Reduce (identity,accumulator,combiner) - identity is the initial value of any generic type,accumulator - lambda fn takes identity and stream element for      
+     accumulating,combiner - how to combine multiple parallel stream, takes output of two accumulator and combine it to one
+ - collectors - toList,toSet,toMap(keyMapperFn,ValueMapperFn),partitioningBy(lambdaFn),groupingBy(lambdaFn),groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),counting(),countingAndThen(collector,lambdaFn),filtering(lambdaFn,collector),
+ - 
 # Code examples to understand FP
 
 ```
