@@ -51,10 +51,10 @@
  - collectors 
     - reduce(initialValueoFAnyType,accumulator,combiner) - reduce(0,(total,element) -> total+element,(r1,r2)->r1+r2)
     - collect(collector)
-       -toList,toSet,toMap(keyMapperFn,ValueMapperFn)
-       -partitioningBy(lambdaFn),groupingBy(lambdaFn)
-       -groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),filtering(lambdaFn,collector)
-       -countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
+       - toList,toSet,toMap(keyMapperFn,ValueMapperFn)
+       - partitioningBy(lambdaFn),groupingBy(lambdaFn)
+       - groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),filtering(lambdaFn,collector)
+       - countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
     - sum(),min(),max()
     - maxBy(comparator),minBy(comparator)
 
