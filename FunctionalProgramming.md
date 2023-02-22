@@ -25,12 +25,15 @@
        - countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
        - flatmap(stream) - flatmap(e->List.of(e-1,e+1).stream())
        
-# Patterns
+# Patterns & Best practices
  - **Internal iterator** i.e. stream forEach - focus on what to do than how to do in conventional for loop
  - **Stratergy Pattern** - pass function as input (stratergy - predicate) and execute operation based on stratergy
  - **Decorator** - instead of passing object to another object, do function chaining using andThen
  - **Fluent Interface** - builder pattern
  - **Execute Around Method** - 
+ -  Bloated Lambdas - externalize it into a separate method and give a name to it 
+  - Use Optional in Lamda for null pointer exceptions, 
+  - Pass function as arguments for template pattern and abstract patterns
 ```
     public class Resource(){
         private Resource(){}
@@ -58,16 +61,6 @@
         Resource.use(blc);
     }
 ```
-
-# Best Practice
-
-  - Bloated Lambdas, 
-  - A Happy Predicate, 
-  - Stream Wrecks, 
-  - How to Kill The Biggest Bug, 
-  - Monads, Passing-a-block, 
-  - The Loan Pattern, 
-  - 5 Ways to Implement Type-Specific Logic
 
 
    
