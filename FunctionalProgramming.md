@@ -33,6 +33,16 @@
     }
 ```
 
+# Best Practice
+
+  - Bloated Lambdas, 
+  - A Happy Predicate, 
+  - Stream Wrecks, 
+  - How to Kill The Biggest Bug, 
+  - Monads, Passing-a-block, 
+  - The Loan Pattern, 
+  - 5 Ways to Implement Type-Specific Logic
+
 # Characteristics of FP
 
  - Lazy Evaluation
