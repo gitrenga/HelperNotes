@@ -1,4 +1,30 @@
 
+# Characteristics of FP
+
+ - Lazy Evaluation
+ - Immutable
+ - Parallelism
+ - Less garbage collection due to reduced number of object created in FP
+ - Compiler can optimize it better for memory and performance
+ - Pure Function - returns same value for same input if its called any number of times
+ - lamda in java have to use variables which are final or effectively final (not final but not modified in code)
+
+# Collectors & Stream
+ 
+ - Lazy Evaluation - functional pipeline is executed only when reduce/terminal operation is started
+ - Reduce (identity,accumulator,combiner) - identity is the initial value of any generic type,accumulator - lambda fn takes identity and stream element for      
+     accumulating,combiner - how to combine multiple parallel stream, takes output of two accumulator and combine it to one
+ - collectors 
+    - sum(),min(),max(),count()
+    - reduce(initialValueoFAnyType,accumulator,combiner) - reduce(0,(total,element) -> total+element,(r1,r2)->r1+r2)
+    - collect(collector)
+       - toList,toSet,toMap(lambdaFn,lambdaFn)
+       - maxBy(comparator),minBy(comparator)
+       - partitioningBy(lambdaFn),groupingBy(lambdaFn)
+       - groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),filtering(lambdaFn,collector)
+       - countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
+       - flatmap(stream) - flatmap(e->List.of(e-1,e+1).stream())
+       
 # Patterns
  - **Internal iterator** i.e. stream forEach - focus on what to do than how to do in conventional for loop
  - **Stratergy Pattern** - pass function as input (stratergy - predicate) and execute operation based on stratergy
@@ -43,31 +69,7 @@
   - The Loan Pattern, 
   - 5 Ways to Implement Type-Specific Logic
 
-# Characteristics of FP
 
- - Lazy Evaluation
- - Immutable
- - Parallelism
- - Less garbage collection due to reduced number of object created in FP
- - Compiler can optimize it better for memory and performance
- - Pure Function - returns same value for same input if its called any number of times
- - lamda in java have to use variables which are final or effectively final (not final but not modified in code)
-
-# Collectors & Stream
- 
- - Lazy Evaluation - functional pipeline is executed only when reduce/terminal operation is started
- - Reduce (identity,accumulator,combiner) - identity is the initial value of any generic type,accumulator - lambda fn takes identity and stream element for      
-     accumulating,combiner - how to combine multiple parallel stream, takes output of two accumulator and combine it to one
- - collectors 
-    - sum(),min(),max(),count()
-    - reduce(initialValueoFAnyType,accumulator,combiner) - reduce(0,(total,element) -> total+element,(r1,r2)->r1+r2)
-    - collect(collector)
-       - toList,toSet,toMap(lambdaFn,lambdaFn)
-       - maxBy(comparator),minBy(comparator)
-       - partitioningBy(lambdaFn),groupingBy(lambdaFn)
-       - groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),filtering(lambdaFn,collector)
-       - countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
-       - flatmap(stream) - flatmap(e->List.of(e-1,e+1).stream())
    
     
 
