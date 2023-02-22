@@ -49,14 +49,16 @@
  - Reduce (identity,accumulator,combiner) - identity is the initial value of any generic type,accumulator - lambda fn takes identity and stream element for      
      accumulating,combiner - how to combine multiple parallel stream, takes output of two accumulator and combine it to one
  - collectors 
+    - sum(),min(),max(),count()
     - reduce(initialValueoFAnyType,accumulator,combiner) - reduce(0,(total,element) -> total+element,(r1,r2)->r1+r2)
     - collect(collector)
-       - toList,toSet,toMap(keyMapperFn,ValueMapperFn)
+       - toList,toSet,toMap(lambdaFn,lambdaFn)
+       - maxBy(comparator),minBy(comparator)
        - partitioningBy(lambdaFn),groupingBy(lambdaFn)
        - groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),filtering(lambdaFn,collector)
        - countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
-    - sum(),min(),max()
-    - maxBy(comparator),minBy(comparator)
+   
+    
 
 # Code examples to understand FP
 
