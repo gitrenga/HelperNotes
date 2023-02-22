@@ -57,6 +57,7 @@
        - partitioningBy(lambdaFn),groupingBy(lambdaFn)
        - groupingBy(lambdaFn,collector),mapping(lambdaFn,collector),filtering(lambdaFn,collector)
        - countingAndThen(collector,lambdaFn),collectingAndThen(collector,lambdaFn)
+       - flatmap(stream) - flatmap(e->List.of(e-1,e+1).stream())
    
     
 
