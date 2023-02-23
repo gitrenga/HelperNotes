@@ -17,6 +17,11 @@
                      which means **to do more with given hardware/thread**
 
 # Difference from Async Programming
+
+  - Two threads can run in parallel but it may require to join the result hence we require both the threads to complete
+  - In Async programming all the **functions are executed immediately** in a separate thread
+  - In Reactive Programming the **functions are executed only when an Event happens** i.e the functions are lazy
+
  
  ```
  //Sequential Programming
@@ -61,5 +66,8 @@
   }
   
  ```
-  - Two threads can run in parallel but it may require to join the result hence we  require both the threads to complete
-Reactor,RxJava
+
+# Reactive Programming in Java
+
+  - Jave only provides the Interface and not the implementation
+  - Impl provided by third party lib such as Reactor,RxJava
