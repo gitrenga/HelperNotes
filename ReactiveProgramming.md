@@ -46,7 +46,7 @@
    }   
       //Reactive Programming
       
- User getUserWithPreference(int userId){
+ **Mono<User>** getUserWithPreference(int userId){
         userService.getUser(userId)
           .zipWith(userPreferenceService.getPreference())
           .map
