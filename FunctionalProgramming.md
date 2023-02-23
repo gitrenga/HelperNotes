@@ -9,6 +9,11 @@
  - Pure Function - returns same value for same input if its called any number of times
  - lamda in java have to use variables which are final or effectively final (not final but not modified in code)
 
+# Difference between collections and Streams
+  
+  - Collections is an abstraction of how data is stored
+  - Stream is an abstraction of how data is processed but it will use internal iterators for processing the data in a given collection
+
 # Collectors & Stream
  
  - Lazy Evaluation - functional pipeline is executed only when reduce/terminal operation is started
