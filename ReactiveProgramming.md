@@ -43,9 +43,23 @@
       
       user.SetPreference(preference);
       return user;
-      
+   }   
       //Reactive Programming
+      
+ User getUserWithPreference(int userId){
+        userService.getUser(userId)
+          .zipWith(userPreferenceService.getPreference())
+          .map
+          (
+            tuple -> {
+              user = tuple.getT1();
+              preference = tuple.getT2();
+              user.setPreference(preference);
+              return user;
+            }
+          );
   }
+  
  ```
   - Two threads can run in parallel but it may require to join the result hence we  require both the threads to complete
 Reactor,RxJava
