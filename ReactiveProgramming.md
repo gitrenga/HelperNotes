@@ -20,7 +20,7 @@
 
   - Two threads can run in parallel but it may require to join the result hence we require both the threads to complete
   - In Async programming all the **functions are executed immediately** in a separate thread
-  - In Reactive Programming the **functions are executed only when an Event happens** i.e the functions are lazy
+  - In Reactive Programming the **functions are executed only when an Event happens** i.e the functions are lazy also it can be synchronous or asynchronous
 
  
  ```
@@ -69,5 +69,14 @@
 
 # Reactive Programming in Java
 
-  - Jave only provides the Interface and not the implementation
+  - Java only provides the Interface and not the implementation
+        - Publisher
+        - Subscriber
+        - Subscription
   - Impl provided by third party lib such as Reactor,RxJava
+
+# Reactor
+
+  - Reactor API have - Data,Completion,Error channel - all these channels can be consumed using consumer lambda
+  - Flux 0-N items
+  - Mono 0-1 items
