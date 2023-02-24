@@ -80,3 +80,38 @@
   - Reactor API have - Data,Completion,Error channel - all these channels can be consumed using consumer lambda
   - Flux 0-N items
   - Mono 0-1 items
+  - block() - blocking mono
+  - toStream() - blocking flux
+  - filter(),map(),collectList(),buffer(),take()
+  - doOnError(),onErrorContinue(),onErrorResume()
+  - distinct(),distinctUntillChanged()
+  - defaultIfEmpty()
+  - MySubscriber<T> extends BaseSubscriber<T>
+      - hookOnSubscribe()
+      - hookOnNext()
+      - hookOnComplete()
+  - FunctionRouter and FunctionHandler and FilterFunction
+      - FunctionRouter in configuration map input URL to FunctionHandler
+  - doOnNext(),then()
+  
+ ```
+  @FunctionalInterface
+public interface RouterFunction<T extends ServerResponse> {
+    Mono<HandlerFunction<T>> route(ServerRequest request);
+    // ...
+}
+ ```
+  
+  ![image](https://user-images.githubusercontent.com/55741060/221101956-13bf1692-789f-4d73-ad92-cc97a302426d.png)
+
+  
+      - FunctionRouter get ServiceRequest and returns ServiceResponse
+  
+   ```
+ public static <T extends ServerResponse> RouterFunction<T> route(
+  RequestPredicate predicate,
+  HandlerFunction<T> handlerFunction)
+ ```
+  
+  ![image](https://user-images.githubusercontent.com/55741060/221102056-24590bc5-0f49-4b46-a58a-2026a23a493e.png)
+
