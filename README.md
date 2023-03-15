@@ -1,5 +1,6 @@
-# Demo
-Minimium viable Demoable Projects and study materials
+# Helper Notes
+
+Points to read
 
 # Books
 
