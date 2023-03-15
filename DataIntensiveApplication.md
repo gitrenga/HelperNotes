@@ -19,3 +19,5 @@
 
 
 https://docs.google.com/presentation/d/1UMDZtvgYUksip_Jx1nzAuDYAPeaoB4heYZr6gbyjvb8/edit#slide=id.g8bf0aaecfb_0_5
+
+https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md#leaders-and-followers
